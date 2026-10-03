@@ -1,0 +1,84 @@
+{
+  "blending": {
+    "inputs": {
+      "cost": {
+        "grain": 3.0,
+        "meat": 2.0
+      },
+      "content": {
+        "vitamin": {
+          "grain": 1.0,
+          "meat": 1.0
+        },
+        "protein": {
+          "grain": 2.0,
+          "meat": 1.0
+        }
+      },
+      "minimum": {
+        "vitamin": 8.0,
+        "protein": 10.0
+      }
+    },
+    "optimum_cost": 18.0,
+    "amounts": {
+      "grain": 2.0,
+      "meat": 6.0
+    }
+  },
+  "assignment": {
+    "cost_matrix": [
+      [
+        9.0,
+        2.0,
+        7.0
+      ],
+      [
+        6.0,
+        4.0,
+        3.0
+      ],
+      [
+        5.0,
+        8.0,
+        1.0
+      ]
+    ],
+    "optimum_cost": 9.0,
+    "assignment": {
+      "W1": "J2",
+      "W2": "J1",
+      "W3": "J3"
+    },
+    "brute_force_cost": 9.0,
+    "integral": true
+  },
+  "transportation": {
+    "supply": {
+      "P1": 20.0,
+      "P2": 30.0
+    },
+    "demand": {
+      "D1": 10.0,
+      "D2": 25.0,
+      "D3": 15.0
+    },
+    "cost": {
+      "P1->D1": 8.0,
+      "P1->D2": 6.0,
+      "P1->D3": 10.0,
+      "P2->D1": 9.0,
+      "P2->D2": 12.0,
+      "P2->D3": 13.0
+    },
+    "optimum_cost": 465.0,
+    "flows": {
+      "P1->D1": 0.0,
+      "P1->D2": 20.0,
+      "P1->D3": 0.0,
+      "P2->D1": 10.0,
+      "P2->D2": 5.0,
+      "P2->D3": 15.0
+    }
+  }
+}

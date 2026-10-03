@@ -1,0 +1,72 @@
+{
+  "knapsack": {
+    "inputs": {
+      "value": {
+        "a": 60.0,
+        "b": 100.0,
+        "c": 120.0
+      },
+      "weight": {
+        "a": 10.0,
+        "b": 20.0,
+        "c": 30.0
+      },
+      "capacity": 50.0
+    },
+    "lp_relaxation": {
+      "objective": 240.0,
+      "picks": {
+        "a": 1.0,
+        "b": 1.0,
+        "c": 0.6666666666666666
+      },
+      "has_fractional_picks": true
+    },
+    "integer_optimum": {
+      "objective": 220.0,
+      "items_taken": [
+        "b",
+        "c"
+      ]
+    },
+    "brute_force_optimum": 220.0,
+    "relaxation_overshoots_integer": true,
+    "solve_time_ms": {
+      "relaxation": 2.448209000249335,
+      "integer": 9.517442999822379
+    }
+  },
+  "facility": {
+    "inputs": {
+      "open_cost": {
+        "d0": 100.0,
+        "d1": 100.0
+      },
+      "serve_cost": {
+        "c0->d0": 10.0,
+        "c0->d1": 20.0,
+        "c1->d0": 25.0,
+        "c1->d1": 15.0,
+        "c2->d0": 20.0,
+        "c2->d1": 22.0
+      }
+    },
+    "candidate_total_costs": {
+      "d0": 155.0,
+      "d1": 157.0,
+      "d0+d1": 245.0
+    },
+    "integer_optimum": {
+      "objective": 155.0,
+      "open_depots": [
+        "d0"
+      ]
+    },
+    "brute_force": {
+      "cost": 155.0,
+      "open_depots": [
+        "d0"
+      ]
+    }
+  }
+}

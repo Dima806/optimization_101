@@ -1,0 +1,27 @@
+{
+  "shadow_prices_reported": {
+    "plant1": 0.0,
+    "plant2": 1.5,
+    "plant3": 1.0
+  },
+  "shadow_prices_finite_difference": {
+    "plant1": 0.0,
+    "plant2": 1.5000000000497948,
+    "plant3": 1.0000000000331966
+  },
+  "shadow_prices_known": {
+    "plant1": 0.0,
+    "plant2": 1.5,
+    "plant3": 1.0
+  },
+  "slack": {
+    "plant1": 2.0,
+    "plant2": 0.0,
+    "plant3": 0.0
+  },
+  "binding_constraints": [
+    "plant2",
+    "plant3"
+  ],
+  "verified": true
+}

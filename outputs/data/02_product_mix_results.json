@@ -1,0 +1,19 @@
+{
+  "pulp": {
+    "profit": 36.0,
+    "mix": {
+      "doors": 2.0,
+      "windows": 6.0
+    }
+  },
+  "scipy": {
+    "profit": 36.0,
+    "mix": {
+      "doors": 2.0,
+      "windows": 6.0
+    }
+  },
+  "known_optimum": 36.0,
+  "pulp_scipy_agree": true,
+  "matches_known_optimum": true
+}

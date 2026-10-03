@@ -1,0 +1,7 @@
+# Reproducibility knobs for optimization_101 (see src/config.py).
+# These are not tuning parameters -- they keep every optimum checkable.
+
+default_backend: pulp        # scipy | pulp | highs | ortools
+seed: 42                     # seeds any randomly generated scenario
+float_tol: 1.0e-6            # tolerance for "is this the known optimum?"
+shadow_price_eps: 1.0e-4     # rhs nudge for the finite-difference dual check

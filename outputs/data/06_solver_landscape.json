@@ -1,0 +1,62 @@
+{
+  "from_scratch_simplex": {
+    "objective": 36.0,
+    "x": [
+      2.0,
+      6.0
+    ],
+    "iterations": 2,
+    "corners_walked": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        6.0
+      ],
+      [
+        2.0,
+        6.0
+      ]
+    ],
+    "matches_library": true
+  },
+  "lp_comparison": {
+    "scipy": {
+      "objective": 36.0,
+      "solve_time_ms": 3.655540000181645
+    },
+    "pulp": {
+      "objective": 36.0,
+      "solve_time_ms": 3.470155999821145
+    },
+    "highs": {
+      "objective": 36.0,
+      "solve_time_ms": 0.36114399972575484
+    },
+    "ortools": {
+      "objective": 36.0,
+      "solve_time_ms": 0.3006469996762462
+    }
+  },
+  "milp_comparison": {
+    "scipy": {
+      "objective": 220.0,
+      "solve_time_ms": 1.601605999894673
+    },
+    "pulp": {
+      "objective": 220.0,
+      "solve_time_ms": 4.620730000169715
+    },
+    "highs": {
+      "objective": 220.0,
+      "solve_time_ms": 0.6140250006865244
+    },
+    "ortools": {
+      "objective": 220.0,
+      "solve_time_ms": 2.1779220005555544
+    }
+  },
+  "all_backends_agree": true
+}
